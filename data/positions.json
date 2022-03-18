@@ -1,0 +1,6 @@
+{
+  "keeper": 1,
+  "defender": 2,
+  "midfielder": 3,
+  "forward": 4
+}
