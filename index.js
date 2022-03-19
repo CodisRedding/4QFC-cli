@@ -138,11 +138,11 @@ const RESULT_FILE = 'results.json';
             }
         }
 
-        writables.forEach(async (writable) => {
+        for (const [key, writable] of Object.entries(writables)) {
             writable.write(']');
             writable.end();
             await finished(writable);
-        });
+        }
     }
 
     const p = players.map(x => { 
